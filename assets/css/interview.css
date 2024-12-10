@@ -1,0 +1,106 @@
+@import url('assets/css/_reset.css');
+@import url('assets/css/fonts.css');
+
+body {
+    min-height: 100vh;
+    font-family: 'Arial Narrow', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, lightblue, white 50%, greenyellow, white, lightblue);
+}
+
+#borderedcontainer {
+    border: 25px dashed black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+.title-container {
+    text-align: center;
+    margin: 40px 0;
+    max-width: 89%;
+    padding: 50px;
+    background-color: lightgray;
+    border: 1px solid black;
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 20px grey; */
+}
+
+.relic-shop-title {
+    font-family: 'SnellRoundhand', cursive;
+    font-size: 100px;
+    color: #000;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    margin: 50px;
+    margin-top: -20px;
+}
+
+.emoji-line {
+    font-size: 90px;
+    margin-top: -50px;
+    margin-bottom: 40px;
+    text-decoration: none;
+}
+
+.relic-shop-description {
+    font-size: 30px;
+    color: black;
+}
+
+.interview-question {
+    font-family: 'SnellRoundhand', cursive;
+    font-size: 60px;
+    color: blue;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    margin: 20px 0;
+}
+
+.interview-answer {
+    font-size: 24px;
+    color: black;
+    margin-top: 20px;
+    max-width: 89%;
+    padding: 20px;
+    text-align: center;
+}
+
+.interview-answer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.p {
+    margin-top: 30px;
+}
+
+
+#page-nav {
+    position: fixed;
+    top: 50px; 
+    left: 25px;
+    padding: 1rem;
+    font-size: 3rem;
+    /* background-color: #ccc; */
+    /* border: 1px solid black; */
+    z-index: +1;
+}
+#page-nav ul {
+    flex-direction: column;
+    display: flex;
+    gap: .5rem;
+}
+#page-nav a {
+    text-decoration: none;
+    cursor: pointer;
+}

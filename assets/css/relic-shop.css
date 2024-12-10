@@ -1,0 +1,195 @@
+
+
+/* ________________________________ */
+
+/* Reset styles */
+@import url('assets/css/_reset.css');
+@import url('assets/css/fonts.css');
+
+body {
+    min-height: 100vh;
+}
+
+#borderedcontainer{
+  border: 25px dashed #B48FE9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, green, white 50%, white, green, white, green white, green);
+}
+
+        /* Title container settings */
+        .title-container {
+            text-align: center;
+            margin: 40px 0;
+            box-sizing: border-box;
+            max-width: 89%;
+            padding: 50px;
+            background-color: lightgray;
+            border: 1px solid black;
+            border-radius: 10px;
+            margin-top: 40px;
+            margin-bottom: -100px;
+        }
+
+        .relic-shop-title {
+            font-family: 'SnellRoundhand', cursive;
+            font-size: 100px;
+            color: #000;
+            text-decoration: underline;
+            text-decoration-thickness: 2px;
+            margin: 50px;
+            margin-top: -20px;
+        }
+
+        .emoji-line {
+            font-size: 90px;
+            margin-top: -50px;
+            margin-bottom: 40px;
+            text-decoration: none;
+        }
+
+        .relic-shop-description {
+            font-family: 'Arial Narrow', sans-serif;
+            font-size: 30px;
+            color: black;
+            margin-top: -10px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Body settings */
+        body {
+            font-family: 'Arial Narrow', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, green, white 50%, white, green);
+            min-height: 100vh;
+        }
+
+        /* Image container settings */
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 250px;
+            margin-top: 250px;
+            margin-bottom: 250px;
+        }
+
+        .image-wrapper {
+            position: relative;
+            width: fit-content;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            max-width: 500px;
+            display: block;
+        }
+
+        /* Info Tab - Position it outside the image */
+        .info-tab {
+            position: absolute;
+            top: 0;
+            left: 100%;
+            margin-left: -100px;
+            margin-top: -150px;
+            background: white;
+            color: black;
+            padding: 20px;
+            border: 1px solid black;
+            opacity: 0;
+            visibility: hidden;
+            width: 520px;
+            pointer-events: none;
+            transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.5s ease;
+            box-shadow: -10px -10px 20px grey;
+        }
+
+        .image-wrapper:hover .info-tab {
+            opacity: 1;
+            visibility: visible;
+            transition: transform 0.5s ease;
+            transform: translate(20px, 50px);
+        }
+
+        .info-tab h2 {
+            margin: 0;
+            font-size: 50px;
+            font-family: 'SnellRoundhand', cursive;
+            text-decoration: underline;
+            text-decoration-thickness: 2px;
+        }
+
+        .info-tab p {
+            margin: 5px 0;
+            font-size: 30px;
+            font-family: 'Arial-Narrow', sans-serif;
+        }
+
+        /* _________Relic Image Sizes_________ */
+        .img-whistle {
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .img-grass {
+            width: 140%;
+            max-width: 400px;
+        }
+
+        .img-holy-studs {
+            width: 130%;
+            max-width: 400px;
+        }
+
+        .img-messiaans {
+            width: 130%;
+            max-width: 300px;
+        }
+
+        .img-sacred-netting {
+            width: 150%;
+            max-width: 520px;
+        }
+
+        .img-sacred-statue {
+            width: 300%;
+            max-width: 600px;
+        }
+
+        .img-chain {
+            width: 150%;
+            max-width: 580px;
+            margin-bottom: 100px;
+        }
+
+
+        #page-nav {
+            position: fixed;
+            top: 50px; 
+            left: 25px;
+            padding: 1rem;
+            font-size: 3rem;
+            /* background-color: #ccc; */
+            /* border: 1px solid black; */
+            z-index: +1;
+        }
+        #page-nav ul {
+            flex-direction: column;
+            display: flex;
+            gap: .5rem;
+        }
+        #page-nav a {
+            text-decoration: none;
+            cursor: pointer;
+        }
