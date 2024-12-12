@@ -56,9 +56,9 @@ body {
 .interview-question {
     font-family: 'SnellRoundhand', cursive;
     font-size: 60px;
-    color: blue;
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
+    color: brown;
+    /* text-decoration: underline;
+    text-decoration-thickness: 2px; */
     margin: 20px 0;
 }
 
