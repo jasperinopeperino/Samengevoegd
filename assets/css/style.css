@@ -1,0 +1,71 @@
+body {
+    border: 25px dashed rgb(235, 122, 36);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, pink, white 50%, blue);
+  }
+  
+  /* Title and description container */
+  .title-container {
+    text-align: center;
+    margin: 40px 0;
+    box-sizing: border-box;
+    max-width: 89%;
+    padding: 50px;
+    background-color: lightgray;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-bottom: -100px;
+    margin-left: 77px;
+  }
+  
+  /* Title styling */
+  .homepage-title {
+    font-family: 'SnellRoundhand', cursive;
+    font-size: 100px;
+    color: #000;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    margin: 50px;
+    margin-top: -20px;
+  }
+  
+  /* Description styling */
+  .homepage-description {
+    font-family: 'Arial Narrow', sans-serif;
+    font-size: 30px;
+    color: black;
+    margin-top: -10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Emoji container */
+  .emoji-container {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+
+  }
+
+  .emoji-container a {
+    font-size: 8rem;
+    color:inherit;
+text-decoration: none;    
+transition: transform 0.2s;
+justify-content: space-between;
+
+  }
+
+  .emoji-container a:hover {
+
+    transform: scale(1.5);
+ 
+      }
